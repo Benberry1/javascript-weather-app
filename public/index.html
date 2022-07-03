@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="weather-app-styles.css" />
     <script src="./script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/92f3963ac0.js"
@@ -22,12 +21,54 @@
           <nav class="navbar">
             <ul class="navlist">
               <li class="nav-list-item">
-                <a href="#" class="nav-link">5 Day Forecast</a>
+                <a href="#five-day-forecast" class="nav-link">5 Day Forecast</a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
+
+      <!-- main content -->
+      <main class="main-grid">
+        <div class="bg-div-one bg-image"></div>
+        <div class="bg-div-two bg-image"></div>
+        <!-- current weather first section -->
+        <div class="section-one bg-image">
+          <div class="current-weather-section-one">
+            <div class="current-weather-primary">
+              <h2 class="current-weather-title">Current Weather</h2>
+              <img
+                class="current-weather-icon"
+                src="./resources/icons/weather/day/113.png"
+                alt="current weather logo"
+              />
+              <p class="current-temp-value">
+                16 <sup class="temp-symbol">&#8451;</sup>
+              </p>
+              <p class="current-weather-desc">Sunny</p>
+            </div>
+            <div class="current-weather-supplementary">
+              <p class="supplementary-title">Rain</p>
+              <p class="supplementary-title">Clouds</p>
+              <p class="supplementary-title">Wind</p>
+              <p class="supplementary-info">68%</p>
+              <p class="supplementary-info">86%</p>
+              <p class="supplementary-info">8 km/h</p>
+            </div>
+          </div>
+          <input type="text" class="search-box" placeholder="Search..." />
+          <div class="place-date-div">
+            <div class="place-name">
+              <p class="city-suburb">Taradale</p>
+              <p class="country">New Zealand</p>
+            </div>
+            <div class="time-day-div">
+              <p class="time">06:20</p>
+              <p class="day">Sun 10th June</p>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
