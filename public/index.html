@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="./script.js" defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg_CC1tvH8KobDAzBjStpktU7RpWXgAnM&libraries=places"
+      async
+    ></script>
+    <script defer src="./script.js"></script>
     <script
       src="https://kit.fontawesome.com/92f3963ac0.js"
       crossorigin="anonymous"
@@ -29,6 +33,10 @@
       </header>
 
       <!-- main content -->
+      <div class="notification-div">
+        <p class="error-message"></p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
       <main class="main-grid">
         <div class="bg-div-one bg-image"></div>
         <div class="bg-div-two bg-image"></div>
@@ -42,28 +50,32 @@
                 src="./resources/icons/weather/day/113.png"
                 alt="current weather logo"
               />
-              <p class="current-temp-value">
-                16 <sup class="temp-symbol">&#8451;</sup>
+              <p class="current-temp-value" data-current-temperature>
+                <sup class="temp-symbol">&#8451;</sup>
               </p>
-              <p class="current-weather-desc">Sunny</p>
+              <p class="current-weather-desc" data-weather-desc></p>
             </div>
             <div class="current-weather-supplementary">
               <p class="supplementary-title">Rain</p>
               <p class="supplementary-title">Clouds</p>
               <p class="supplementary-title">Wind</p>
-              <p class="supplementary-info">68%</p>
-              <p class="supplementary-info">86%</p>
-              <p class="supplementary-info">8 km/h</p>
+              <p class="supplementary-info" data-rain-percent></p>
+              <p class="supplementary-info" data-cloud-percent></p>
+              <p class="supplementary-info" data-wind-speed></p>
             </div>
           </div>
-          <input type="text" class="search-box" placeholder="Search..." />
+          <input
+            type="text"
+            class="city-search"
+            placeholder="Please enter a location..."
+          />
           <div class="place-date-div">
             <div class="place-name">
-              <p class="city-suburb">Taradale</p>
-              <p class="country">New Zealand</p>
+              <p class="city-suburb"></p>
+              <p class="country"></p>
             </div>
             <div class="time-day-div">
-              <p class="time">06:20</p>
+              <p class="time"></p>
               <p class="day">Sun 10th June</p>
             </div>
           </div>
