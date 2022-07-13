@@ -10,8 +10,8 @@
   "author": "Ben Berry",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.27.2",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "node-fetch": "^2.6.7"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
